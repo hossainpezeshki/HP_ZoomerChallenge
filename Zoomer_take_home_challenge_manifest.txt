@@ -1,0 +1,50 @@
+Zoomer data science take home challenge
+Data set manifest and challenge description
+
+The data consists of two files:
+(0. This manifest document)
+1. Zoomer_take_home_challenge_training_set.csv
+2. Zoomer_take_home_challenge_test_set.csv
+
+The data columns are:
+date: yyyy-mm-dd format
+calendar_code: 0 or 1 (a code describing certain calendar events)
+order_count: an integer (the number of orders received on that date)
+restaurant_count: an integer (the number of restaurants delivering on that date)
+max_temp: a float (max temperature for that day in degrees Celsius)
+min_temp: a float (min temperature for that day in degrees Celsius)
+precipitation: a float (millimeters of precipitation on that date)
+events: a string (description of weather events on that date)
+
+order_count is absent from the test set.
+
+
+The goal of the test is to predict the number of orders for any given day. You
+are tasked with building a model that can predict the order count in the test
+data set. The error of the model is measured as RMSE (root mean squared error).
+
+Your end product should be a CSV file with a single column of predicted order
+counts for the dates 2014-10-01 through 2014-10-31. Please do *not* include a
+header line.
+
+You may use any programming language that you are comfortable with (e.g. Python,
+R, Matlab/Octave, Julia, etc). This is doable in a spreadsheet, but we'd like to
+see you write code for this challenge.
+
+Additionally you should answer the following questions:
+1. Explain the process you used to predict the order volumes.
+2. What other data might help your forecast?
+3. Which day of the week has the highest mean # of orders?
+4. Which day of the week has the lowest mean # of orders?
+
+Return your CSV of predicted order counts and the answers to roy@zoomer.io
+
+Include your prediction code and the code you used to answer questions 3 and 4.
+Include any additional insights or visualizations if you would like.
+
+This project is designed to take less than 4 hours and should be doable in 1 - 2
+hours. We are not looking for a perfect prediction, but rather an understanding
+of how you approached the problem and the result you produced in a limited
+amount of time with limited data.
+
+If you have questions, please send them to roy@zoomer.io
